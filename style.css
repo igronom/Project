@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/bring-night-space-wallpaper-with-glowing-starfield_1017-53512.jpg");
+    background-repeat: round;
+    background-size: 100%;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+div.container {
+    margin: 120px auto;
+    width: 500px;
+    height: 500px;
+}
+
+#e-orbit {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: white;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#m-orbit{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: white;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#earth{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1200px-Earth_Western_Hemisphere_transparent_background.png");
+    background-size: 100%;
+    top: 20px;
+    left: 18px;
+}
+
+#moon{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Full_moon.png/768px-Full_moon.png");
+    background-size: 100%;
+    top: 10px;
+}
+
+#sun{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 285px;
+    left: 510px;
+    background-image: url("https://purepng.com/public/uploads/large/3150635235038sltjl2scjqyrycktmiru9x5yqax1kqjk3ywzmmifjhtzysjribji2pmd7mg7hiss0noxqs8npk8fj0cwis0zw2lxv679l8l9yy.png");
+    background-size: 100%;
+}
